@@ -1,18 +1,33 @@
-## Getting Started
+An array is considered special if every pair of its adjacent elements contains two numbers with different parity.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+You are given an array of integers nums. Return true if nums is a special array, otherwise, return false.
 
-## Folder Structure
+Example 1:
 
-The workspace contains two folders by default, where:
+Input: nums = [1]
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Output: true
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Explanation:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+There is only one element. So the answer is true.
 
-## Dependency Management
+Example 2:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Input: nums = [2,1,4]
+
+Output: true
+
+Explanation:
+
+There is only two pairs: (2,1) and (1,4), and both of them contain numbers with different parity. So the answer is true.
+
+Example 3:
+
+Input: nums = [4,3,1,6]
+
+Output: false
+
+Explanation:
+
+nums[1] and nums[2] are both odd. So the answer is false.
